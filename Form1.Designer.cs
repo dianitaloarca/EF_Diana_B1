@@ -61,7 +61,7 @@ namespace EF_Diana_B1
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(78, 162);
             this.textBox1.Name = "textBox1";
@@ -71,7 +71,7 @@ namespace EF_Diana_B1
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(303, 162);
             this.textBox2.Name = "textBox2";
@@ -80,7 +80,7 @@ namespace EF_Diana_B1
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button1.Font = new System.Drawing.Font("Juice ITC", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(185, 221);
             this.button1.Name = "button1";
@@ -93,11 +93,11 @@ namespace EF_Diana_B1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gabriola", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(236, 59);
+            this.label4.Font = new System.Drawing.Font("Gabriola", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.label4.Location = new System.Drawing.Point(236, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 39);
+            this.label4.Size = new System.Drawing.Size(134, 39);
             this.label4.TabIndex = 6;
             this.label4.Text = "¿Quién ganará?";
             this.label4.Click += new System.EventHandler(this.label4_Click_1);
@@ -106,11 +106,13 @@ namespace EF_Diana_B1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("French Script MT", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(111, 29);
+            this.label3.ForeColor = System.Drawing.Color.Green;
+            this.label3.Location = new System.Drawing.Point(103, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(245, 42);
+            this.label3.Size = new System.Drawing.Size(267, 42);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Batalla de números";
+            this.label3.Text = "¡Batalla de números!";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // Form1
             // 
@@ -118,7 +120,7 @@ namespace EF_Diana_B1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(482, 290);
+            this.ClientSize = new System.Drawing.Size(482, 309);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
@@ -126,9 +128,11 @@ namespace EF_Diana_B1
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Numbers battle";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
